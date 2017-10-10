@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace App
 {
@@ -12,6 +7,23 @@ namespace App
         public MainPage()
         {
             InitializeComponent();
+
+            
+        }
+
+        private async void Triangle(object sender, System.EventArgs e)
+        {
+             await Navigation.PushAsync(new Triangle());
+        }
+
+        private async void Square(object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new Square());
+        }
+
+        private async void Pentagon(object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new Pentagon());
         }
     }
 }
